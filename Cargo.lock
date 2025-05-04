@@ -1334,7 +1334,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "afbdc74edc00b6f6a218ca6a5364d6226a259d4b8ea1af4a0ea063f27e179f4d"
 dependencies = [
  "profiling-procmacros",
- "puffin",
+ "puffin 0.19.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "tracy-client 0.17.6",
 ]
 
@@ -1366,6 +1366,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "puffin"
+version = "0.19.1"
+source = "git+https://github.com/tedsteen/puffin.git?branch=upgrade-egui#993b78a05318d566687cab01036a2c3af5e54f6b"
+dependencies = [
+ "anyhow",
+ "byteorder",
+ "cfg-if",
+ "itertools",
+ "once_cell",
+ "parking_lot",
+]
+
+[[package]]
 name = "puffin_http"
 version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1375,7 +1388,7 @@ dependencies = [
  "crossbeam-channel",
  "log",
  "parking_lot",
- "puffin",
+ "puffin 0.19.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2256,7 +2269,7 @@ dependencies = [
  "futures-lite",
  "parking_lot",
  "profiling",
- "puffin",
+ "puffin 0.19.1 (git+https://github.com/tedsteen/puffin.git?branch=upgrade-egui)",
  "puffin_http",
  "thiserror 2.0.11",
  "tracy-client 0.18.0",
